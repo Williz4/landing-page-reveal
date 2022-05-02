@@ -38,7 +38,11 @@
 				
 				<div class="box"></div>
 
-				<div><img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2866&q=80" alt="" class="image"></div>
+				<div>
+
+					<img class="img" src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2866&q=80" alt="" class="image">
+
+				</div>
 
 			</div>
 
@@ -83,6 +87,48 @@
 			</div>
 
 		</div>
+
+		<script>
+			
+			TweenMax.staggerFrom(".block", .8, {
+				width: "0%",
+				ease: Power1.easeIn,
+				delay: 2,
+			}, 0.04);
+
+			TweenMax.to(".loader", 1, {
+				x: 2,
+				opaciy: 0,
+				ease: Expo.easeInOut,
+				delay: 1.5
+			});
+
+			TweenMax.staggerFrom(".nav > a, .about p, .sub-header > a ", 2, {
+				opacity: 0,
+				y: 30,
+				ease: Expo.easeInOut,
+				delay: 3
+			}, 0.06);
+
+			TweenMax.to(".box", .2, {
+				opacity: 1,
+				ease: Expo.easeInOut,
+				delay: 3.8
+			});
+
+			TweenMax.to(".img", .2, {
+				opacity: 1,
+				ease: Expo.easeInOut,
+				delay: 4
+			});
+
+			TweenMax.to(".box", 2.4, {
+				y: "-100%",
+				ease: Expo.easeInOut,
+				delay: 4
+			});
+
+		</script>
 
 	</body>
 

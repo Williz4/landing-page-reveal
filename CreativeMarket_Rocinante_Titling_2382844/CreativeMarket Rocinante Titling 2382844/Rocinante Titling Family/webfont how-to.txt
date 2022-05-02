@@ -1,0 +1,30 @@
+/* if you don't feel comfortable handling this yourself, please call on House of Pretty to help out. we charge a flat-rate $25 fee to install your webfonts and set up your CSS to properly call the features you need, which you can buy at http://xo.houseofpretty.com/shop/help/
+*/
+
+/* 
+these @font-face rules tell your CSS document where your font files are and what format the files are.
+
+replace the type/ directory with wherever you decide to keep your font files.
+
+in a nutshell, you will probably only need WOFF; which are supported in every major browser except Opera Mini.
+
+WOFF2 is a next-generation version of WOFF, with smaller filesizes—it's on the horizon, but is not yet supported in all browsers.
+
+EOT files are for older versions of Internet Explorer.
+ */
+
+	@font-face {
+		font-family: 'Rocinantelight';
+		src: url('type/RocinanteTitling-Light.woff') format('woff');
+		src: url('type/RocinanteTitling-Light.woff2') format('woff2');
+		src: url('type/RocinanteTitling-Light.eot') format('eot');
+		font-weight: normal;
+		font-style: normal;
+		}
+	
+
+/* these rules abbreviate the font family names to an easier-to-type shorthand if you're making a detailed piece of typesetting. */
+
+	.rocilite {
+		font-family: 'Rocinantelight';
+	}
